@@ -1,0 +1,542 @@
+! version = 2.0
+
+// Bot variables
+! var name = fantasy book
+! var age  = 5
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+// OPENING
++ (start|hello|hi|hey|i need help|i need a book)
+- Hello! I bet you are here for a book recommendation, is that correct?
+
++ (yes|sure|okay|yeah)
+% hello i bet you are here for a book recommendation is that correct
+- You should read: Kingdom Of The Wicked by Kerri Maniscalco. Would you like to learn more information about this book? {topic=kingdomofthewicked}
+- You should read: The Ex Hex
+- You should read: Serpent & Dove 
+- You should read: The Bone Witch 
+- You should read: The Atlas Six
+- You should read: The Witch's Heart
+- You should read: The Last Magician
+- You should read: The Magicians
+- You should read: Red Queen by Victoria Aveyard. Would you like to learn more information about this book? {topic=redqueen}
+- You should read: The Night Circus
+- You should read: Air Awakens
+- You should read: Caraval
+- You should read: Once Upon A Broken Heart 
+- You should read: Shadow and Bone
+- You should read: A Song of Wraiths and Ruin
+- You should read: Children of Blood and Bone
+- You should read: A Darker Shade of Magic 
+- You should read: The Last Magician
+- You should read: The Invisible Library by Genevieve Cogman
+- You should read: The Gilded Ones by Namina Forna
+- You should read: The Cruel Prince by Holly Black. Would you like to learn more information about this book? {topic=thecruelprince} 
+- You should read: A Court of Thorns and Roses 
+- You should read: Throne of Glass
+- You should read: An Enchantment Of Ravens 
+- You should read: An Heir Comes To Rise
+- You should read: A Dance with the Fae Prince
+- You should read: Fae's Ascent
+- You should read: House of Earth and Blood
+- You should read: Fable by Adrienne Young. Would you like to learn more information about this book? {topic=fable}
+- You should read: Daughter of the Pirate King by Tricia Levenseller. Would you like to learn more information about this book? {topic=daughterofthepirateking}
+- You should read: Six of Crows
+- You should read: Sea of Ruin 
+- You should read: All the Stars and Teeth
+- You should read: The Starless Sea
+- You should read: Daughter of the Pirate King by Tricia Levenseller. Would you like to learn more information about this book? {topic=daughterofthepirateking}
+- You should read: To Kill a Kingdom 
+- You should read: Tempest Rising 
+- You should read: The Siren
+- You should read: Cinderella is Dead by Kalynn Bayron. Would you like to learn more information about this book? {topic=cinderellaisdead}
+- You should read: Cinder by Marissa Meyer
+- You should read: Ash Princess 
+- You should read: Three Dark Crowns
+- You should read: Furyborn
+- You should read: Crier's War 
+- You should read: The Dark Tide 
+- You should read: Dance of Thieves 
+- You should read: All the Ever Afters 
+- You should read: Heartless
+- You should read: The Selection by Kiera Cass. Would you like to learn more information about this book? {topic=theselection}
+- You should read: Throne of Glass by Sarah J. Maas. Would you like to learn more information about this book? {topic=throneofglass}
+- You should read: We Hunt the Flame
+- You should read: From Blood and Ash 
+- You should read: The Shadows Between Us 
+- You should read: The Queen's Assassin
+- You should read: Song of Achilles by Madeline Miller. Would you like to learn more information about this book? {topic=songofachilles}
+- You should read: Lore
+- You should read: A Thousand Ships 
+- You should read: Daughters of Sparta 
+- You should read: Sistersong 
+- You should read: The Witch's Heart
+- You should read: The Selection by Kiera Cass. Would you like to learn more information about this book? {topic=theselection}
+- You should read: The Hunger Games 
+- You should read: The Poppy War
+- You should read: An Ember in the Ashes 
+- You should read: This Savage Song 
+- You should read: Shatter Me 
+- You should read: Scythe
+- You should read: Angelfall
+- You should read: Truth Seer
+- You should read: Cinder by Marissa Meyer
+- You should read: Blackout by Dhonielle Clayton. Would you like to learn more information about this book? {topic=blackout}
+- You should read: If You, Then Me by Yvonne Woon
+- You should read: Loveboat, Taipei by Abigail Hing Wen
+- You should read: Felix Ever After by Kacen Callender
+- You should read: The Selection by Kiera Cass
+- You should read: A Night to Surrender by Tessa Dare. Would you like to learn more information about this book? {topic=anighttosurrender}
+- You should read: Pride and Prejudice by Jane Austen
+- You should read: The Duke and I by Julia Quinn
+- You should read: The Seven Husbands Of Evelyn Hugo by Taylor Jenkins Reid
+- You should read: A Lady's Guide to Mischief and Mayhem by Manda Collins
+- You should read: Bringing Down the Duke by Evie Dunmore
+- You should read: To Have and to Hoax by Martha Waters
+- You should read: The Lotus Palace by Jeannie Lin
+- You should read: Anatomy: A Love Story by Dana Schwartz
+- You should read: Red, White & Royal Blue by Casey McQuiston
+- You should read: Off to the Races by Elsie Silver
+- You should read: People We Meet On Vacation by Emily Henry
+- You should read: Good Guys Don't Lie by Micalea Smeltzer
+- You should read: A Thousand Boy Kisses by Tillie Cole
+- You should read: A Lot Like Adiós by Alexis Daria
+- You should read: Twisted Love by Ana Huang
+- You should read: Him by Sarina Bowen and Elle Kennedy
+- You should read: The Change in the Mirror by B.Q. Hanson
+- You should read: Things We Never Got Over by Lucy Score
+- You should read: The Fine Print by Lauren Asher
+- You should read: Second First Impressions by Sally Thorne
+- You should read: We Can't Keep Meeting Like This by Rachel Lynn Solomon
+- You should read: Act Your Age, Eve Brown by Talia Hibbert
+- You should read: The Spanish Love Deception by Elena Armas
+- You should read: The Love Hypothesis by Ali Hazelwood
+- You should read: The Soulmate Equation by Christina Lauren
+- You should read: It Ends With Us by Colleen Hoover
+- You should read: The Heart Principle by Helen Hoang
+- You should read: Bold Fortune by M. M. Crane
+- You should read: Make It Sweet by Kristen Callihan
+- You should read: Love and Gelato by Jenna Evans Welch
+- You should read: Hello (From Here) by Chandler Baker and Wesley King
+- You should read: To All the Boys I've Loved Before by Jenny Han
+- You should read: All This Time Book by Mikki Daughtry and Rachael Lippincott
+- You should read: Five Feet Apart by Mikki Daughtry, Rachael Lippincott, and Tobias Iaconis
+- You should read: Terms and Conditions by Lauren Asher
+- You should read: To Love Jason Thorne by Ella Maise
+- You should read: The Spanish Love Deception by Elena Armas
+- You should read: The Love Hypothesis by Ali Hazelwood
+- You should read: The Wall of Winnipeg and Me
+- You should read: The Dating Plan by Sara Desai
+- You should read: Dating Dare by Jayci Lee
+- You should read: The Kiss Quotient by Helen Hoang
+- You should read: If I Never Met You by Mhairi McFarlane
+- You should read: To All the Boys I've Loved Before by Jenny Han
+- You should read: Love & Other Natural Disasters by Misa Sugiura
+- You should read: The Hating Game: A Novel by Sally Thorne
+- You should read: The Fine Print by Lauren Asher
+- You should read: Terms and Conditions by Lauren Asher
+- You should read: Ten Rules for Faking It by Sophie Sullivan
+- You should read: The Love Hypothesis by Ali Hazelwood
+- You should read: Coffee Boy by Austin Chant
+- You should read: Beautiful Bastard by Christina Lauren
+- You should read: Blackout by Dhonielle Clayton. Would you like to learn more information about this book? {topic=blackout}
+- You should read: A Night to Surrender by Tessa Dare. Would you like to learn more information about this book? {topic=anighttosurrender}
+- You should read: Red, White & Royal Blue by Casey McQuiston
+- You should read: People We Meet On Vacation by Emily Henry
+- You should read: Things We Never Got Over by Lucy Score
+- You should read: Love and Gelato by Jenna Evans Welch
+- You should read: To Love Jason Thorne by Ella Maise
+- You should read: The Fine Print by Lauren Asher
+- You should read: Scythe by Neal Shusterman
+- You should read: The Echo Wife, by Sarah Gailey
+- You should read: Snow Crash, by Neal Stephenson
+- You should read: Contact, by Carl Saga
+- You should read: A Canticle for Leibowitz, by Walter M. Miller Jr.
+- You should read: Solaris, by Stanislaw Lem
+- You should read: The Book of Phoenix, by Nnedi Okorafor
+- You should read: This Is How You Lose the Time War, by Amal El-Mohtar and Max Gladstone
+- You should read: Rosewater, by Tade Thompson
+- You should read: The Stand, by Stephen King
+- You should read: Radiance, by Catherynne M. Valente
+- You should read: Dune by Frank Herbert
+- You should read: An Unkindness of Ghosts, by Rivers Solomon
+- You should read: Annihilation, by Jeff VanderMeer
+- You should read: 1984, by George Orwell
+- You should read: Do Androids Dream of Electric Sheep?, by Philip K. Dick
+- You should read: Exhalation, by Ted Chiang
+- You should read: The Luxury of Time Travel by Christelle Lujan
+- You should read: The Ones We’re Meant to Find by Joan He
+- You should read: The Cure by K. A. Riley
+- You should read: Iron Widow by Xiran Jay Zhao
+- You should read: Girls at the Edge of the World by Laura Brooke Robson
+- You should read: No Beauties or Monsters by Tara Goedjen
+- You should read: Any Sign of Life by Rae Carson
+- You should read: Crownchasers by Rebecca Coffindaffer
+- You should read: Heart of Iron by Ashley Poston
+- You should read: All These Monsters by Amy Tintera
+- You should read: The Other Side of the Sky by Amie Kaufman & Meagan Spooner
+- You should read: This Mortal Coil by Emily Suvada
+- You should read: Invictus by Ryan Graudin
+- You should read: The Disasters by M.K. England
+- You should read: The Sound of Stars by Alechia Dow
+- You should read: Warcross by Marie Lu
+- You should read: Want by Cindy Pon
+- You should read: The Final Six by Alexandra Monir
+- You should read: Fate of Flames by Sarah Raughley
+- You should read: Early Departures by Justin A. Reynolds
+- You should read: The Loneliest Girl in the Universe by Lauren James
+- You should read: Renegades by Marissa Meyer
+- You should read: Light Years by Kass Morgan
+- You should read: The Pioneer by Bridget Tyler
+- You should read: Cinder by Marissa Meyer
+- You should read: Aurora Rising by Amie Kaufman & Jay Kristoff
+
++ no
+% hello i bet you are here for a book recommendation is that correct
+- Okay, come back when you need help picking out your next book!
+
+
+////BOOK DESCRIPTIONS////
+
+/// CINDERELLA IS DEAD
+> topic cinderellaisdead
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=cinderellaisdeadinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic cinderellaisdead
+
+ + [*] (author|writer) [*]
+ - This unique and powerful retelling of Cinderella is written by Kalynn Bayron, who has also written a duology: This Poison Heart (2021) and This Wicked Fate to be released June 21, 2022
+ 
+ + [*] price [*]
+ - Paperback: $9.89 \n
+ ^ Hardcover: $13.30 \n
+ ^ Kindle: $6.86
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - It's 200 years after Cinderella found her prince, but the fairy tale is over. Teen girls are now required to appear at the Annual Ball, where the men of the kingdom select wives based on a girl's display of finery. If a suitable match is not found, the girls not chosen are never heard from again.\n
+ ^ Sixteen-year-old Sophia would much rather marry Erin, her childhood best friend, than parade in front of suitors. At the ball, Sophia makes the desperate decision to flee, and finds herself hiding in Cinderella's mausoleum. There, she meets Constance, the last known descendant of Cinderella and her step sisters. Together they vow to bring down the king once and for all--and in the process, they learn that there's more to Cinderella's story than they ever knew . . .
+ 
+ + [*] series [*]
+ - Cinderella is Dead is a standalone book. 
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+///DAUGHTER OF THE PIRATE KING
+> topic daughterofthepirateking
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=daughterofthepiratekinginfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic daughterofthepiratekinginfo
+
+ + [*] (author|writer) [*]
+ - In Daughter of the Pirate King, debut author Tricia Levenseller blends action, adventure, romance, and a little bit of magic into a gripping tale on the high seas. Levenseller has also written two standalones named Warrior of the Wild (2019) and The Shadows Between Us (2020), as well as a duology: Blade of Secrets (2021) and Master of Iron to be released July 26, 2022
+ 
+ + [*] price [*]
+ - Paperback: $9.87 \n
+ ^ Hardcover: $14.99 \n
+ ^ Kindle: $9.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - Sent on a mission to retrieve an ancient hidden map―the key to a legendary treasure trove―seventeen-year-old pirate captain Alosa deliberately allows herself to be captured by her enemies, giving her the perfect opportunity to search their ship. More than a match for the ruthless pirate crew, Alosa has only one thing standing between her and the map: her captor, the unexpectedly clever and unfairly attractive first mate Riden. But not to worry, for Alosa has a few tricks up her sleeve, and no lone pirate can stop the Daughter of the Pirate King.
+ 
+ + [*] series [*]
+ - This duology includes: #1 Daughter of the Pirate King (2018) and #2 Daughter of the Siren Queen (2019)
+
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+///FABLE
+> topic fable
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=fableinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic fableinfo
+
+ + [*] (author|writer) [*]
+ - This classic sea adventure story is written by Adrienne Young. She has also written the Sky and the Deep series. 
+ 
+ + [*] price [*]
+ - Paperback: $15.85 \n
+ ^ Hardcover: $14.69 \n
+ ^ Kindle: $10.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - As the daughter of the most powerful trader in the Narrows, the sea is the only home seventeen-year-old Fable has ever known. It’s been four years since the night she watched her mother drown during an unforgiving storm. The next day her father abandoned her on a legendary island filled with thieves and little food. To survive she must keep to herself, learn to trust no one and rely on the unique skills her mother taught her. The only thing that keeps her going is the goal of getting off the island, finding her father and demanding her rightful place beside him and his crew. To do so Fable enlists the help of a young trader named West to get her off the island and across the Narrows to her father. \n\n
+ ^ But her father’s rivalries and the dangers of his trading enterprise have only multiplied since she last saw him and Fable soon finds that West isn't who he seems. Together, they will have to survive more than the treacherous storms that haunt the Narrows if they're going to stay alive.
+ 
+ + [*] series [*]
+ - The Fable duology includes: #1 Fable (2020) and #2 Namesake (2021)
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+/// KINGDOM OF THE WICKED
+> topic kingdomofthewicked
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=kingdomofthewickedinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic kingdomofthewickedinfo
+
+ + [*] (author|writer) [*]
+ - The author of Kingdom of The Wicked is Kerri Maniscalco. She grew up in New York City. She has written another 5 book series called Stalking Jack the Ripper.
+ 
+ + [*] price [*]
+ - Paperback: $9.34 \n
+ ^ Hardcover: $14.59 \n
+ ^ Kindle: $10.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - Emilia and her twin sister Vittoria are streghe - witches who live secretly among humans, avoiding notice and persecution. One night, Vittoria misses dinner service at the family's renowned Sicilian restaurant. Emilia soon finds the body of her beloved twin...desecrated beyond belief. Devastated, Emilia sets out to find her sister's killer and to seek vengeance at any cost--even if it means using dark magic that's been long forbidden. \n\n
+ ^ Then Emilia meets Wrath, one of the Wicked--princes of Hell she has been warned against in tales since she was a child. Wrath claims to be on Emilia's side, tasked by his master with solving the series of women's murders on the island. But when it comes to the Wicked, nothing is as it seems...
+ 
+ + [*] series [*]
+ - The Kingdom of The Wicked series includes: #1 Kingdom of the Wicked, #2 Kingdom of The Feared, and #3 Kingdom of the Cursed - to be released September 27, 2022. 
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+///RED QUEEN
+>topic redqueen
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=redqueeninfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+>topic redqueeninfo
+
+ + [*] (author|writer) [*]
+ - Red Queen is a young adult fantasy novel written by American writer Victoria Aveyard. Published in February 2015, it was her first novel and first series. She has written another series called Realm Breaker (2021), with the second book Blade Breaker releasing in 2022.
+ 
+ + [*] price [*]
+ - Paperback: $6.98 \n
+ ^ Hardcover: $13.55 \n
+ ^ Kindle: $12.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - Mare Barrow's world is divided by blood—those with common, Red blood serve the Silver-blooded elite, who are gifted with superhuman abilities. Mare is a Red, scraping by as a thief in a poor, rural village, until a twist of fate throws her in front of the Silver court. Before the king, princes, and all the nobles, she discovers she has an ability of her own. \n\n
+ ^ To cover up this impossibility, the king forces her to play the role of a lost Silver princess and betroths her to one of his own sons. As Mare is drawn further into the Silver world, she risks everything and uses her new position to help the Scarlet Guard—a growing Red rebellion—even as her heart tugs her in an impossible direction.\n\n
+ ^ One wrong move can lead to her death, but in the dangerous game she plays, the only certainty is betrayal.
+ 
+ + [*] series [*]
+ - The Red Queen series includes: #1 Red Queen, #2 Glass Sword, #3 King's Cage, #4 War Storm, and #5 Broken Throne 
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+///SONG OF ACHILLES
+> topic songofachilles
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=songofachillesinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic songofachillesinfo
+
+ + [*] (author|writer) [*]
+ - The Song of Achilles is a 2011 novel by Madeline Miller. Madeline Miller has also written other mythological fantasy books like Circe and Galatea: A Short Story
+ 
+ + [*] price [*]
+ - Paperback: $10.35 \n
+ ^ Hardcover: $18.31 \n
+ ^ Kindle: $10.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - A tale of gods, kings, immortal fame, and the human heart, The Song of Achilles is a dazzling literary feat that brilliantly reimagines Homer’s enduring masterwork, The Iliad. An action-packed adventure, an epic love story, a marvelously conceived and executed page-turner, Miller’s monumental debut novel has already earned resounding acclaim from some of contemporary fiction’s brightest lights—and fans of Mary Renault, Bernard Cornwell, Steven Pressfield, and Colleen McCullough’s Masters of Rome series will delight in this unforgettable journey back to ancient Greece in the Age of Heroes.
+ 
+ + [*] series [*]
+ - Song of Achilles is a standalone book. 
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+///THE CRUEL PRINCE
+> topic thecruelprince
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=thecruelprinceinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+>topic thecruelprinceinfo
+
+ + [*] (author|writer) [*]
+ - The Folk of the Air series is written by Holly Black, who has also written other series that go by the names: Modern Faerie Tales, The Spiderwick Chronicles, The Curse Workers, and Magisterium.
+ 
+ + [*] price [*]
+ - Paperback: $9.46 \n
+ ^ Hardcover: $13.54 \n
+ ^ Kindle: $10.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about)[*]
+ -Jude was seven years old when her parents were murdered and she and her two sisters were stolen away to live in the treacherous High Court of Faerie. Ten years later, Jude wants nothing more than to belong there, despite her mortality. But many of the fey despise humans. Especially Prince Cardan, the youngest and wickedest son of the High King.\n
+ ^To win a place at the Court, she must defy him--and face the consequences.\n
+ ^In doing so, she becomes embroiled in palace intrigues and deceptions, discovering her own capacity for bloodshed. But as civil war threatens to drown the Courts of Faerie in violence, Jude will need to risk her life in a dangerous alliance to save her sisters, and Faerie itself.
+ 
+ + [*] series [*]
+ - The Folk of the Air series includes: #1 The Cruel Prince (2018), #2 The Wicked King (2020), and #3 The Queen of Nothing (2020)
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+///THE SELECTION
+> topic theselection
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=theselectioninfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic theselectioninfo
+
+ + [*] (author|writer) [*]
+ - The Selection is a young adult novel by Kiera Cass. Kiera Cass has also written a standalone: The Siren, and a duology: The Betrothed and The Betrayed
+ 
+ + [*] price [*]
+ - Paperback: $6.48 \n
+ ^ Hardcover: $15.29 \n
+ ^ Kindle: $10.99
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - For thirty-five girls, the Selection is the chance of a lifetime. The opportunity to escape a rigid caste system, live in a palace, and compete for the heart of gorgeous Prince Maxon. But for America Singer, being Selected is a nightmare. It means turning her back on her secret love with Aspen, who is a caste below her, and competing for a crown she doesn’t want.\n
+ ^ Then America meets Prince Maxon—and realizes that the life she’s always dreamed of may not compare to a future she never imagined.
+ 
+ + [*] series [*]
+ - This series includes: #1 The Selection (2012), #2 The Elite (2013), #3 The One (2014), #4 The Heir (2015), #5 The Crown (2016)
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+/// THRONE OF GLASS
+> topic throneofglass
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=throneofglassinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic throneofglassinfo
+
+ + [*] (author|writer) [*]
+ - Throne of Glass is a young adult high fantasy novel series by Sarah J. Maas. Sarah J. Maas has also released two other series: A Court of Thorns and Roses and Crescent City
+ 
+ + [*] price [*]
+ - Paperback: $9.86 \n
+ ^ Hardcover: $13.00 \n
+ ^ Kindle: $6.26
+ 
+ + [*] (summary|synopsis|plot|outline|what is it about) [*]
+ - After serving out a year of hard labor in the salt mines of Endovier for her crimes, 18-year-old assassin Celaena Sardothien is dragged before the Crown Prince. Prince Dorian offers her her freedom on one condition: she must act as his champion in a competition to find a new royal assassin.\n
+ ^ Her opponents are men-thieves and assassins and warriors from across the empire, each sponsored by a member of the king's council. If she beats her opponents in a series of eliminations, she'll serve the kingdom for three years and then be granted her freedom.\n\n
+ ^ Celaena finds her training sessions with the captain of the guard, Westfall, challenging and exhilirating. But she's bored stiff by court life. Things get a little more interesting when the prince starts to show interest in her... but it's the gruff Captain Westfall who seems to understand her best.\n
+ ^ Then one of the other contestants turns up dead... quickly followed by another. Can Celaena figure out who the killer is before she becomes a victim? As the young assassin investigates, her search leads her to discover a greater destiny than she could possibly have imagined.
+ 
+ + [*] series [*]
+ - This series includes: #1 Throne of Glass (2012), #2 Crown of Midnight (2013), #3 Heir of Fire (2014), #4 Queen of Shadows (2015), #5 Empire of Storms (2016), #6 Tower of Dawn (2017), #7 Kingdom of Ash (2018)
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
