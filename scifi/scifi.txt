@@ -1,0 +1,97 @@
+! version = 2.0
+
+// Bot variables
+! var name = mystery book
+! var age  = 5
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+// OPENING
++ (start|hello|hi|hey|begin)
+- Welcome! If you need help finding a book, type \n'I need a book' \n\n
+^ You could also ask these questions to find out more about the Science Fiction genre:\n\n
+^ In Construction - What is Science Fiction?\n
+^ In Construction - What are the signature characteristics of the Science Fiction genre?\n
+^ In Construction - What are common Science Fiction themes?\n
+
++ (find me a book|i need a book)
+- Hello! I bet you are here for a Science Fiction book recommendation, is that correct?{topic=scifistory}
+
+>topic scifistory
+  + [*] (yes|okay|sure) [*]
+  - You should read: Scythe by Neal Shusterman
+  - You should read: The Echo Wife, by Sarah Gailey
+  - You should read: Snow Crash, by Neal Stephenson
+  - You should read: Contact, by Carl Saga
+  - You should read: A Canticle for Leibowitz, by Walter M. Miller Jr.
+  - You should read: Solaris, by Stanislaw Lem
+  - You should read: The Book of Phoenix, by Nnedi Okorafor
+  - You should read: This Is How You Lose the Time War, by Amal El-Mohtar and Max Gladstone
+  - You should read: Rosewater, by Tade Thompson
+  - You should read: The Stand, by Stephen King
+  - You should read: Radiance, by Catherynne M. Valente
+  - You should read: Dune by Frank Herbert
+  - You should read: An Unkindness of Ghosts, by Rivers Solomon
+  - You should read: Annihilation, by Jeff VanderMeer
+  - You should read: 1984, by George Orwell
+  - You should read: Do Androids Dream of Electric Sheep?, by Philip K. Dick
+  - You should read: Exhalation, by Ted Chiang
+  - You should read: The Luxury of Time Travel by Christelle Lujan
+  - You should read: The Ones We’re Meant to Find by Joan He
+  - You should read: The Cure by K. A. Riley
+  - You should read: Iron Widow by Xiran Jay Zhao
+  - You should read: Girls at the Edge of the World by Laura Brooke Robson
+  - You should read: No Beauties or Monsters by Tara Goedjen
+  - You should read: Any Sign of Life by Rae Carson
+  - You should read: Crownchasers by Rebecca Coffindaffer
+  - You should read: Heart of Iron by Ashley Poston
+  - You should read: All These Monsters by Amy Tintera
+  - You should read: The Other Side of the Sky by Amie Kaufman & Meagan Spooner
+  - You should read: This Mortal Coil by Emily Suvada
+  - You should read: Invictus by Ryan Graudin
+  - You should read: The Disasters by M.K. England
+  - You should read: The Sound of Stars by Alechia Dow
+  - You should read: Warcross by Marie Lu
+  - You should read: Want by Cindy Pon
+  - You should read: The Final Six by Alexandra Monir
+  - You should read: Fate of Flames by Sarah Raughley
+  - You should read: Early Departures by Justin A. Reynolds
+  - You should read: The Loneliest Girl in the Universe by Lauren James
+  - You should read: Renegades by Marissa Meyer
+  - You should read: Light Years by Kass Morgan
+  - You should read: The Pioneer by Bridget Tyler
+  - You should read: Cinder by Marissa Meyer
+  - You should read: Aurora Rising by Amie Kaufman & Jay Kristoff
+  - You should read: The Effort by Claire Holroyde
+  - You should read: Remote Control by Nnedi Okorafor
+  - You should read: Winter's Orbit by Everina Maxwell
+  - You should read: Amid the Crowd of Stars by Stephen Leigh
+  - You should read: The Future Is Yours by Dan Frey
+  - You should read: The Echo Wife by Sarah Gailey
+  - You should read: All Systems Red by Martha Wells
+  - You should read: The Girl Who Could Move Sh*t with Her Mind by Jackson Ford
+
+
+  + [*] no [*]
+  - Okay, come back when you need help picking out your next book!
+  
+  + *
+  - Please enter a genre.
+
+<topic
