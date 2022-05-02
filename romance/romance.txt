@@ -1,0 +1,348 @@
+! version = 2.0
+
+// Bot variables
+! var name = romance
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+// OPENING
++ (start|hello|hi|hey|begin)
+- Welcome! If you need help finding a book, type \n'I need a book' \n\n
+^ You could also ask these questions to find out more about the Romance genre:\n\n
+^ What is the Romance genre?\n
+^ What are the Romance subgenres?\n
+^ What are some Romance tropes?\n
+^ What are the signature characteristics of the Romance novels?\n
+
++ (find me a book|i need a book)
+- Hello! I bet you are here for a Romance book recommendation, is that correct?
+
++ *
+% hello i bet you are here for a romance book recommendation is that correct
+* <star> == yes => Okay, lets find you a book! Is there a specific romance trope you are interested in?\n
+^ The tropes are:\n\n
+^ Love Triangle\n
+^ Historical Romance\n
+^ Enemies to Lovers\n
+^ Friends to Lovers\n
+^ Grumpy Sunshine\n
+^ Young Adult\n
+^ Fake Relationship\n
+^ Office Romance\n
+^ Random\n
+^ Pick from this list to narrow down and find the best book for you!{topic=romancestory}
+- Okay, come back when you need help picking out your next book!
+
+///ROMANCE STORY
+
+>topic romancestory
+  + [*] love triangle [*]
+  - You should read: Blackout by Dhonielle Clayton.
+  - You should read: If You, Then Me by Yvonne Woon
+  - You should read: Loveboat, Taipei by Abigail Hing Wen
+  - You should read: Felix Ever After by Kacen Callender
+  - You should read: The Selection by Kiera Cass
+  
+  + [*] (historical|historical romance) [*]
+  - You should read: A Night to Surrender by Tessa Dare.
+  - You should read: Pride and Prejudice by Jane Austen
+  - You should read: The Duke and I by Julia Quinn
+  - You should read: The Seven Husbands Of Evelyn Hugo by Taylor Jenkins Reid
+  - You should read: A Lady's Guide to Mischief and Mayhem by Manda Collins
+  - You should read: Bringing Down the Duke by Evie Dunmore
+  - You should read: To Have and to Hoax by Martha Waters
+  - You should read: The Lotus Palace by Jeannie Lin
+  - You should read: Anatomy: A Love Story by Dana Schwartz
+  
+  + [*] enemies to lovers [*]
+  - You should read: Red, White & Royal Blue by Casey McQuiston
+  - You should read: Off to the Races by Elsie Silver
+  - You should read: Enemies by Tijan Meyer
+  - You should read: Better Than the Movies by Lynn Painter
+  
+  + [*] friends to lovers [*]
+  - You should read: People We Meet On Vacation by Emily Henry
+  - You should read: Good Guys Don't Lie by Micalea Smeltzer
+  - You should read: A Thousand Boy Kisses by Tillie Cole
+  - You should read: A Lot Like Adiós by Alexis Daria
+  - You should read: Twisted Love by Ana Huang
+  - You should read: Him by Sarina Bowen and Elle Kennedy
+  - You should read: The Change in the Mirror by B.Q. Hanson
+  - You should read: The Cheat Sheet by Sarah Adams
+  
+  + [*] grumpy sunshine [*]
+  - You should read: Things We Never Got Over by Lucy Score
+  - You should read: The Fine Print by Lauren Asher
+  - You should read: Second First Impressions by Sally Thorne
+  - You should read: We Can't Keep Meeting Like This by Rachel Lynn Solomon
+  - You should read: Act Your Age, Eve Brown by Talia Hibbert
+  - You should read: The Spanish Love Deception by Elena Armas
+  - You should read: The Love Hypothesis by Ali Hazelwood
+  - You should read: The Soulmate Equation by Christina Lauren
+  - You should read: It Ends With Us by Colleen Hoover
+  - You should read: The Heart Principle by Helen Hoang
+  - You should read: Bold Fortune by M. M. Crane
+  - You should read: Make It Sweet by Kristen Callihan
+
+  + [*] (young adult|y/a|ya|y a) [*]
+  - You should read: Love and Gelato by Jenna Evans Welch
+  - You should read: Hello (From Here) by Chandler Baker and Wesley King
+  - You should read: To All the Boys I've Loved Before by Jenny Han
+  - You should read: All This Time Book by Mikki Daughtry and Rachael Lippincott
+  - You should read: Five Feet Apart by Mikki Daughtry, Rachael Lippincott, and Tobias Iaconis
+  - You should read: Better Than the Movies by Lynn Painter
+  
+  + [*] (fake relationship|fake marriage|fake dating) [*]
+  - You should read: Terms and Conditions by Lauren Asher
+  - You should read: To Love Jason Thorne by Ella Maise
+  - You should read: The Spanish Love Deception by Elena Armas
+  - You should read: The Love Hypothesis by Ali Hazelwood
+  - You should read: The Wall of Winnipeg and Me by Mariana Zapata
+  - You should read: The Dating Plan by Sara Desai
+  - You should read: Dating Dare by Jayci Lee
+  - You should read: The Kiss Quotient by Helen Hoang
+  - You should read: If I Never Met You by Mhairi McFarlane
+  - You should read: To All the Boys I've Loved Before by Jenny Han
+  - You should read: Love & Other Natural Disasters by Misa Sugiura
+  - You should read: The Last Eligible Billionaire by Pippa Grant
+  
+  + [*] (office|workplace|workplace romance|office romance) [*]
+  - You should read: The Hating Game: A Novel by Sally Thorne
+  - You should read: The Fine Print by Lauren Asher
+  - You should read: Terms and Conditions by Lauren Asher
+  - You should read: Ten Rules for Faking It by Sophie Sullivan
+  - You should read: The Love Hypothesis by Ali Hazelwood
+  - You should read: Coffee Boy by Austin Chant
+  - You should read: Beautiful Bastard by Christina Lauren
+
+  + [*] sports romance [*]
+  - You should read: Enemies by Tijan Meyer
+  - You should read: Long Shot by Kennedy Ryan
+  - You should read: Block Shot by Kennedy Ryan
+  - You should read: Hook Shot by Kennedy Ryan
+  - You should read: When Stars Collide by Susan Elizabeth Phillips
+  - You should read: Throttled by Lauren Asher
+  - You should read: From Lukov with Love by Mariana Zapata
+  - You should read: The Wall of Winnipeg and Me by Mariana Zapata
+  
+  + [*] (no|random|none|nope|any|anything) [*]
+  - You should read: Blackout by Dhonielle Clayton.
+  - You should read: If You, Then Me by Yvonne Woon
+  - You should read: Loveboat, Taipei by Abigail Hing Wen
+  - You should read: Felix Ever After by Kacen Callender
+  - You should read: The Selection by Kiera Cass
+  - You should read: A Night to Surrender by Tessa Dare.
+  - You should read: Pride and Prejudice by Jane Austen
+  - You should read: The Duke and I by Julia Quinn
+  - You should read: The Seven Husbands Of Evelyn Hugo by Taylor Jenkins Reid
+  - You should read: A Lady's Guide to Mischief and Mayhem by Manda Collins
+  - You should read: Bringing Down the Duke by Evie Dunmore
+  - You should read: To Have and to Hoax by Martha Waters
+  - You should read: The Lotus Palace by Jeannie Lin
+  - You should read: Anatomy: A Love Story by Dana Schwartz
+  - You should read: Red, White & Royal Blue by Casey McQuiston
+  - You should read: Off to the Races by Elsie Silver
+  - You should read: Enemies by Tijan Meyer
+  - You should read: Better Than the Movies by Lynn Painter
+  - You should read: People We Meet On Vacation by Emily Henry
+  - You should read: Good Guys Don't Lie by Micalea Smeltzer
+  - You should read: A Thousand Boy Kisses by Tillie Cole
+  - You should read: A Lot Like Adiós by Alexis Daria
+  - You should read: Twisted Love by Ana Huang
+  - You should read: Him by Sarina Bowen and Elle Kennedy
+  - You should read: The Change in the Mirror by B.Q. Hanson
+  - You should read: The Cheat Sheet by Sarah Adams
+  - You should read: Things We Never Got Over by Lucy Score
+  - You should read: Second First Impressions by Sally Thorne
+  - You should read: We Can't Keep Meeting Like This by Rachel Lynn Solomon
+  - You should read: Act Your Age, Eve Brown by Talia Hibbert
+  - You should read: The Spanish Love Deception by Elena Armas
+  - You should read: The Love Hypothesis by Ali Hazelwood
+  - You should read: The Soulmate Equation by Christina Lauren
+  - You should read: It Ends With Us by Colleen Hoover
+  - You should read: The Heart Principle by Helen Hoang
+  - You should read: Bold Fortune by M. M. Crane
+  - You should read: Make It Sweet by Kristen Callihan
+  - You should read: Love and Gelato by Jenna Evans Welch
+  - You should read: Hello (From Here) by Chandler Baker and Wesley King
+  - You should read: To All the Boys I've Loved Before by Jenny Han
+  - You should read: All This Time Book by Mikki Daughtry and Rachael Lippincott
+  - You should read: Five Feet Apart by Mikki Daughtry, Rachael Lippincott, and Tobias Iaconis
+  - You should read: Better Than the Movies by Lynn Painter
+  - You should read: Terms and Conditions by Lauren Asher
+  - You should read: To Love Jason Thorne by Ella Maise
+  - You should read: The Spanish Love Deception by Elena Armas
+  - You should read: The Wall of Winnipeg and Me by Mariana Zapata
+  - You should read: The Dating Plan by Sara Desai
+  - You should read: Dating Dare by Jayci Lee
+  - You should read: The Kiss Quotient by Helen Hoang
+  - You should read: If I Never Met You by Mhairi McFarlane
+  - You should read: To All the Boys I've Loved Before by Jenny Han
+  - You should read: Love & Other Natural Disasters by Misa Sugiura
+  - You should read: The Last Eligible Billionaire by Pippa Grant
+  - You should read: The Hating Game: A Novel by Sally Thorne
+  - You should read: The Fine Print by Lauren Asher
+  - You should read: Terms and Conditions by Lauren Asher
+  - You should read: Ten Rules for Faking It by Sophie Sullivan
+  - You should read: Coffee Boy by Austin Chant
+  - You should read: Beautiful Bastard by Christina Lauren
+  - You should read: Enemies by Tijan Meyer
+  - You should read: Long Shot by Kennedy Ryan
+  - You should read: Block Shot by Kennedy Ryan
+  - You should read: Hook Shot by Kennedy Ryan
+  - You should read: When Stars Collide by Susan Elizabeth Phillips
+  - You should read: Throttled by Lauren Asher
+  - You should read: From Lukov with Love by Mariana Zapata
+  - You should read: The Wall of Winnipeg and Me by Mariana Zapata
+  
+
+  + *
+  - The tropes are:\n\n
+  ^ Love Triangle\n
+  ^ Historical Romance\n
+  ^ Enemies to Lovers\n
+  ^ Friends to Lovers\n
+  ^ Grumpy Sunshine\n
+  ^ Young Adult\n
+  ^ Fake Relationship\n
+  ^ Office Romance\n
+  ^ Sports Romance\n
+  ^ Random\n
+  ^ Pick something like that so I can narrow down and pick the best book for you!
+ 
+<topic
+
+
+////BOOK DESCRIPTIONS////
+
+/// A NIGHT TO SURRENDER
+> topic anighttosurrender
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=anighttosurrenderinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic anighttosurrenderinfo
+
+ + [*] (author|writer) [*]
+ -hello
+ 
+ + [*] price [*]
+ - Paperback: $9.89 \n
+ ^ Hardcover: $13.30 \n
+ ^ Kindle: $6.86
+ 
+ + [*] (summary|synopsis|plot|outline) [*]
+ -hello
+ 
+ + [*] series [*] 
+ -hello
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+
+/// BLACKOUT
+> topic blackout
+
+ + [*] (yes|sure|okay) [*]
+ - What would you like to know? {topic=blackoutinfo}
+ 
+ + [*] (no|nope) [*]
+ - Happy reading!
+ 
+ + *
+ - If you would like to know more about this book, enter 'yes'
+ 
+<topic
+
+> topic blackoutinfo
+
+ + [*] (author|writer) [*]
+ -hello
+ 
+ + [*] price [*]
+ - Paperback: $9.89 \n
+ ^ Hardcover: $13.30 \n
+ ^ Kindle: $6.86
+ 
+ + [*] (summary|synopsis|plot|outline) [*]
+ -hello
+
+ + [*] series [*]
+ -hello
+ 
+ + *
+ - Enter one of the following: 'author' 'price' 'summary' 'series'
+
+<topic
+
+////QUESTIONS////
+
++ (what is the romance genre|what makes a book romance)
+- Two basic elements comprise every romance novel: a central love story and an emotionally satisfying and optimistic ending.\n
+^ The main plot centers around individuals falling in love and struggling to make the relationship work. \n
+^ A writer can include as many subplots as he/she wants as long as the love story is the main focus of the novel.\n
+^ Romance novels may have any tone or style, be set in any place or time, and have varying levels of sensuality—ranging from sweet to extremely hot.\n
+^ These settings and distinctions of plot create specific subgenres within romance fiction. 
+
++ (romance subgenre)
+- The primary Romance subgenres include:
+^ Contemporary Romance\n
+^ Erotic Romance\n
+^ Historical Romance\n
+^ Paranormal Romance\n
+^ Spiritual Romance\n
+^ Romantic Suspense\n
+^ Fantasy Romance\n
+^ New Adult Romance\n
+^ Young Adult Romance
+
++ (romance tropes)
+- In addition to romance books organized by categories by these sub-genres, they may also fit a specific romance trope.\n
+^ A romance trope is a plot device or theme used within a romance novel giving a recognizable starting point to the story that a reader can recognize.\n
+^ Though many romance books can use one common romance trope, it is their storylines and characters that differentiate each book using this common plot device.\n
+^ Romance authors can use more than one romance trope within a novel and these romance tropes can be found within any romance sub-genre.\n
+^ The most common romance tropes include:
+^ Best Friend’s Brother/Sister or Brother/Sister’s Best Friend\n
+^ Billionaire Romance/Secret Billionaire\n
+^ Enemies to Lovers\n
+^ Fake Relationship\n
+^ Forbidden Romance\n
+^ Office Romance
+
++ (what are the characteristics of romance novels|what are some romance novel characteristics)
+- At its core, a romance novel is about a developing romance between a hero and a heroine. Here are some common characteristics of romance novels that span subgenres:
+^ There must be a conflict challenging the relationship that needs to be overcome.\n
+^ The stories are aspirational, and so issues outside of the central courtship are limited.\n
+^ Romance novels are generally told through the perspective of a woman and feature strong-willed and clever female characters.\n
+^ All romance novels follow the moral principle that good behavior is rewarded with unconditional love.\n
+^ Most important of all, the stories have a happy ending.
+
++ *
+- Say "hello" to start chatting with me.
