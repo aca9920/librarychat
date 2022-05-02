@@ -1,0 +1,48 @@
+! version = 2.0
+
+// Bot variables
+! var name = mystery book
+! var age  = 5
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+// OPENING
++ (start|hello|hi|hey|i need help|i need a book)
+- Hello! I bet you are here for a Mystery book recommendation, is that correct? {topic=mysterystory}
+
+>topic mysterystory
+  + [*] (yes|okay|sure) [*]
+  - You should read: When No One Is Watching by Alyssa Cole
+  - You should read: Stalking Jack The Ripper by Kerri Maniscalco
+  - You should read: The Couple Next Door by Shari Lapena
+  - You should read: The Seven Deaths Of Evelyn Hardcastle
+  - You should read: Truly Devious by Maureen Johnson
+  - You should read: A Stranger in the House by Shari Lapena
+  - You should read: The Woman in the Window by A. J. Finn
+  - You should read: The Maid: A Novel by Nita Prose
+  - You should read: A Good Girl's Guide To Murder by Holly Jackson
+  - You should read: We Are All the Same in the Dark by Julia Heaberlin
+
+  + [*] no [*]
+  - Okay, come back when you need help picking out your next book!
+  
+  + *
+  - Please enter a genre.
+
+<topic

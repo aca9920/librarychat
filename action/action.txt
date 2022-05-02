@@ -1,0 +1,56 @@
+! version = 2.0
+
+// Bot variables
+! var name = mystery book
+! var age  = 5
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+// OPENING
++ (start|hello|hi|hey|begin)
+- Welcome! If you need help finding a book, type \n'I need a book' \n\n
+^ You could also ask these questions to find out more about the Self Help genre:\n\n
+^ In Construction\n
+^ In Construction\n
+^ In Construction\n
+
++ (find me a book|i need a book)
+- Hello! I bet you are here for a Action book recommendation, is that correct? 
+
++ *
+% hello i bet you are here for a action book recommendation is that correct
+* <star> == yes => {topic=actionstory}
+- Okay, come back when you need help picking out your next book!
+
+>topic actionstory
+  + [*] (yes|okay|sure) [*]
+  - You should read: The Truth About Everything by Brianna Wiest
+  - You should read: The Mountain Is You: Transforming Self-Sabotage Into Self-Mastery by Brianna Wiest
+  - You should read: The Altar Within: A Radical Devotional Guide to Liberate the Divine Self by Juliet Diaz
+  - You should read: 101 Essays That Will Change The Way You Think by Brianna Wiest
+  - You should read: Dear Self by Ruby Dhal
+  - You should read: You're Not Enough (And That's Okay): Escaping the Toxic Culture of Self-Love by Allie Beth Stuckey
+
+  + [*] no [*]
+  - Okay, come back when you need help picking out your next book!
+  
+  + *
+  - Please enter a genre.
+
+<topic
